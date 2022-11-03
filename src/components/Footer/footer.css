@@ -1,0 +1,10 @@
+.footer p{
+font-size: 0.8rem;
+text-align: center;
+height:3vh;
+border-top: 1px solid #dc00f8;;
+background: -webkit-linear-gradient(45deg, #DC00F8, #694EFA);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration: none;
+}

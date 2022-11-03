@@ -1,0 +1,9 @@
+.selectorarea {
+    padding-top:5rem;
+    height: 89vh;
+    text-align: center;
+    color:#fcfcfc;
+}
+.selectorarea p {
+    font-size: 1.5rem;
+}
