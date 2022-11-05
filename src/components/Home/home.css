@@ -26,72 +26,33 @@ text-shadow: 0px 3px 0px #b2a98f,
 }
 .homei {
     border:1px solid #8f34f9;
-}
-.homeh {
-    height:15rem;
+    height:16rem;
     width:30%;
     position: absolute;
-    top:38%;
-    left:2.5%;
-	border-radius: 0.3rem;
-	opacity: 0.5;
-    z-index:10;
-}
-.homec {
-    height:15rem;
-    width:30%;
-    position:absolute;
-    top:38%;
-    left:35%;
-	border-radius: 0.3rem;
-	opacity: 0.5;
-    z-index:10;
-}
-.homei {
-    height:15rem;
-    width:30%;
-    position: absolute;
-    top:38%;
+    top:35%;
     left:67.5%;
     background-color: #fcfcfc;
 	border-radius: 0.3rem;
 }
-.homehh {
-    z-index:1;
-	height:15rem;
-    width:30%;
-    position: absolute;
-    top:38%;
-    left:2.5%;
-	border-radius: 0.3rem;
-}
-.homecc {
-	z-index:1;
-	height:15rem;
-    width:30%;
-    position:absolute;
-    top:38%;
-    left:35%;
-	border-radius: 0.3rem;
-}
+
 /* ------------------------------------------ */
 /* editorのタイトル */
 /* ------------------------------------------ */
 .homehtml {
     position: absolute;
-    top:34%;
+    top:31%;
     left:4%;
     color:#fcfcfc;
 }
 .homecss {
     position: absolute;
-    top:34%;
+    top:31%;
     left:37%;
     color:#fcfcfc;
 }
 .homeresult {
     position: absolute;
-    top:34%;
+    top:31%;
     left:69.5%;
     color:#fcfcfc;
 }
@@ -224,6 +185,7 @@ text-shadow: 0px 3px 0px #b2a98f,
     color: #fcfcfc;
     transition: 0.3s ease-in-out;
 	border: 1px solid #fcfcfc;
+	margin-top: 10rem;
 }
 .homejoin::before {
 	content: '';

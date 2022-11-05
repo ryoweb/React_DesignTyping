@@ -1,4 +1,56 @@
-.iiwake {
-    color:white;
+.userinfo img {
+    height:15rem;
+    border: 2px solid #fcfcfc;
+    border-radius: 2rem;
+    display: block;
+    margin: 20px auto;
+}
+.username {
+    color:#fcfcfc;
     text-align: center;
+}
+.logintext {
+    color:#fcfcfc;
+    text-align: center;
+    padding-top:10rem;
+}
+/* ----------------------------------------------- */
+/* Login */
+/* ----------------------------------------------- */
+.buttons {
+    margin-top: -10%;
+    text-align: center;
+}
+.login, .logout {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: 2px solid #fcfcfc;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.login:hover, .logout:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.login:focus, .logout:focus {
+    outline: none;
+}
+
+.login, .logout {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }

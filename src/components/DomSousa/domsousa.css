@@ -1,96 +1,67 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-textarea {
-  overflow: hidden;
-  resize: none;
-}
-/* --------------------------------------- */
-/* editorのtitle等 */
-/* --------------------------------------- */
-.myprofiletitle {
-  display: flex;
-  margin-top:0.5rem;
-  justify-content: space-around;
-  color:#555;
-}
-.myprofileresult {
+.domsousaresult {
   position: absolute;
-  top:1960px;
+  top:520px;
   left:2%;
-  color:#555;
-}
-/* -------------------------------------------- */
-/* autoButton */
-/* -------------------------------------------- */
-.myprofiletitle button {
-	background: #fcfcfc;
-	border:1px solid #111;
-	border-radius: 0.2rem;
-	margin-left:0.5rem;
-  color:#555;
 }
 /* --------------------------------------- */
 /* editor関連 */
 /* --------------------------------------- */
-.myprofileh {
+.domsousah {
     position: absolute;
     margin-top:0.5rem;
     left:2%;
     opacity: 0.5;
     z-index:10;
     width:30.6%;
-    height:1820px;
+    height:400px;
   }
-  .myprofilehh {
+  .domsousahh {
     position: absolute;
     margin-top:0.5rem;
     left:2%;
     z-index:1;
     width:30.6%;
-    height:1820px;
+    height:400px;
   }
   
-  .myprofilec {
+  .domsousac {
     position: absolute;
     margin-top:0.5rem;
     left:34.6%;
     opacity: 0.5;
     z-index:10;
     width:30.6%;
-    height:1820px;
+    height:400px;
   }
-  .myprofilecc {
+  .domsousacc {
     position: absolute;
     margin-top:0.5rem;
     left:34.6%;
     z-index:1;
     width:30.6%;
-    height:1820px;
+    height:400px;
   }
   
-  .myprofilej {
+  .domsousaj {
     position: absolute;
     margin-top:0.5rem;
     left:67.2%;
     opacity: 0.5;
     z-index:10;
     width:30.6%;
-    height:1820px;
+    height:400px;
   }
-  .myprofilejj {
+  .domsousajj {
     position: absolute;
     margin-top:0.5rem;
     left:67.2%;
     z-index:1;
     width:30.6%;
-    height:1820px;
+    height:400px;
   } 
-  .myprofilei {
+  .domsousai {
     position:absolute;
-    margin-top: 1890px;
+    margin-top: 450px;
     border: 2px solid #111;
     width: 100%;
     height:100vh;

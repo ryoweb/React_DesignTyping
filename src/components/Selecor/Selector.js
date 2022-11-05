@@ -9,14 +9,14 @@ function Selector() {
     <div className='mainarea'>
     <div className='selectorarea'>
 
-    <p>WebDesign</p>
+    <p>WebSite</p>
     <ul>
       <li><Link to="/myprofile">MyProfile</Link></li>
     </ul>
 <br />
     <p>DesignIdea</p>
     <ul>
-      <li>coming soon</li>
+      <li><Link to="/dropdownmenu">Dropdown Menu</Link></li>
     </ul>
 <br />
     <p>HTML</p>
@@ -26,12 +26,12 @@ function Selector() {
 <br />
     <p>CSS</p>
     <ul>
-      <li>coming soon</li>
+      <li><Link to="/position">Learn Position</Link></li>
     </ul>
 <br />
     <p>JavaScript</p>
     <ul>
-      <li>coming soon</li>
+      <li><Link to="/domsousa">dom</Link></li>
     </ul>
 <br />
     <p>React</p>

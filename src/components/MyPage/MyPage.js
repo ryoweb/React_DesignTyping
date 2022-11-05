@@ -1,13 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import './mypage.css'
-import { MdConstruction } from 'react-icons/md'
+//------------------------------------------
+import firebase from 'firebase/compat/app'
+import {auth} from '../../firebase'
+import { getAuth, signInAnonymously } from "firebase/auth";
+import {useAuthState} from 'react-firebase-hooks/auth'
+//------------------------------------------
+// import { signInWithPopup } from 'firebase/auth'
+// import { auth, provider } from '../../firebase';
+// import { useAuthState } from 'react-firebase-hooks/auth'
+import { FcGoogle } from 'react-icons/fc';
 
 function MyPage() {
+  const [user] = useAuthState(auth);
   return (
     <>
     <div className='mainarea'>
-        <p className='iiwake'>鋭意作成中です<MdConstruction /></p>
+      {user ? (
+        <>
+          <UserInfo />
+          <SignOutButton />
+        </>
+      ) : (
+        <SignInButton />
+      )}
     </div>
     <Footer />
     </>
@@ -15,3 +33,39 @@ function MyPage() {
 }
 
 export default MyPage
+
+function SignInButton() {
+  const signinGoogle = () => {
+    // signInWithPopup(auth, provider);
+    const gprovider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(gprovider);
+  }
+  return (
+    <>
+    <p className='logintext'>登録不要、Googleのアカウントで安全に、簡単にログインする事が出来ます</p>
+    <div className='buttons'>
+    <button className='login' onClick={signinGoogle}>GoogleLogin&emsp;&emsp;<FcGoogle /></button>
+    </div>
+    </>
+  )
+}
+
+function SignOutButton() {
+  return (
+    <div className='buttons'>
+    <button className='logout' onClick={() => auth.signOut()}>Logout</button>
+    </div>
+  )
+}
+
+function UserInfo() {
+  return (
+    <div className='userinfo'>
+      <img src={auth.currentUser.photoURL} alt="usericon" />
+      <p className='username'>こんにちは、{auth.currentUser.displayName}さん</p>
+      <p className='username'><Link to="/chatroom">コミュニティチャットへ</Link></p>
+      <p className='username'><Link to="/mypage">達成度(開発中)</Link></p>
+      <p className='username'><Link to="/mypage">ソースコードの追加(開発中)</Link></p>
+    </div>
+  );
+}
