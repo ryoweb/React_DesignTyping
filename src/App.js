@@ -12,6 +12,7 @@ import MyProfile from './components/MyProfile/MyProfile'
 import DropDownMenu from './components/DropDownMenu/DropDownMenu'
 import DomSousa from './components/DomSousa/DomSousa'
 import Position from './components/Position/Position'
+import PlayGround from './components/PlayGround/PlayGround'
 //-----------------------------------------
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -28,6 +29,7 @@ function App() {
            <Route path="/dropdownmenu" element={<DropDownMenu />} />
            <Route path="/domsousa" element={<DomSousa />} />
            <Route path="/position" element={<Position />} />
+           <Route path="/playground" element={<PlayGround />} />
         </Routes>
     </Router>
   );

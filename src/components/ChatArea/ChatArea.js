@@ -23,7 +23,7 @@ function Chat() {
                     <img src={photoURL} alt="投稿者"/>
                     <p>{auth.currentUser.displayName}さん</p>
                 </div>
-                <div className='usermessage'>
+                <div className='usermessage' id="messages">
                 <p>{text}</p>
                 </div>
             </div>

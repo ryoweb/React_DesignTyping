@@ -8,7 +8,11 @@ function Selector() {
     <>
     <div className='mainarea'>
     <div className='selectorarea'>
-
+    <p>PlayGround</p>
+    <ul>
+      <li><Link to="/playground">PlayGround</Link></li>
+    </ul>
+<br />
     <p>WebSite</p>
     <ul>
       <li><Link to="/myprofile">MyProfile</Link></li>

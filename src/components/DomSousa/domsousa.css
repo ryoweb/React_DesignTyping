@@ -1,68 +1,20 @@
+/* --------------------------------------- */
+/* editorのtitle等 */
+/* --------------------------------------- */
 .domsousaresult {
   position: absolute;
-  top:520px;
+  top:22rem;
   left:2%;
+  color:#555;
 }
 /* --------------------------------------- */
 /* editor関連 */
 /* --------------------------------------- */
-.domsousah {
-    position: absolute;
-    margin-top:0.5rem;
-    left:2%;
-    opacity: 0.5;
-    z-index:10;
-    width:30.6%;
-    height:400px;
-  }
-  .domsousahh {
-    position: absolute;
-    margin-top:0.5rem;
-    left:2%;
-    z-index:1;
-    width:30.6%;
-    height:400px;
-  }
-  
-  .domsousac {
-    position: absolute;
-    margin-top:0.5rem;
-    left:34.6%;
-    opacity: 0.5;
-    z-index:10;
-    width:30.6%;
-    height:400px;
-  }
-  .domsousacc {
-    position: absolute;
-    margin-top:0.5rem;
-    left:34.6%;
-    z-index:1;
-    width:30.6%;
-    height:400px;
-  }
-  
-  .domsousaj {
-    position: absolute;
-    margin-top:0.5rem;
-    left:67.2%;
-    opacity: 0.5;
-    z-index:10;
-    width:30.6%;
-    height:400px;
-  }
-  .domsousajj {
-    position: absolute;
-    margin-top:0.5rem;
-    left:67.2%;
-    z-index:1;
-    width:30.6%;
-    height:400px;
-  } 
-  .domsousai {
+.domsousai {
     position:absolute;
-    margin-top: 450px;
+    top:24rem;
     border: 2px solid #111;
     width: 100%;
     height:100vh;
-  }
+}
+

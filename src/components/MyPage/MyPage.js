@@ -42,7 +42,8 @@ function SignInButton() {
   }
   return (
     <>
-    <p className='logintext'>登録不要、Googleのアカウントで安全に、簡単にログインする事が出来ます</p>
+    <p className='logintext'>登録不要、Googleのアカウントで簡単にログインする事ができ
+    <br />コミュニティチャットなどの機能が開放されます</p>
     <div className='buttons'>
     <button className='login' onClick={signinGoogle}>GoogleLogin&emsp;&emsp;<FcGoogle /></button>
     </div>
@@ -64,8 +65,6 @@ function UserInfo() {
       <img src={auth.currentUser.photoURL} alt="usericon" />
       <p className='username'>こんにちは、{auth.currentUser.displayName}さん</p>
       <p className='username'><Link to="/chatroom">コミュニティチャットへ</Link></p>
-      <p className='username'><Link to="/mypage">達成度(開発中)</Link></p>
-      <p className='username'><Link to="/mypage">ソースコードの追加(開発中)</Link></p>
     </div>
   );
 }
