@@ -19,18 +19,18 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <Router>
-        <Header />
-        <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="/selector" element={<Selector />} />
-           <Route path="/myprofile" element={<MyProfile />} />
-           <Route path="/chatroom" element={<ChatArea />} />
-           <Route path="/mypage" element={<MyPage />} />
-           <Route path="/dropdownmenu" element={<DropDownMenu />} />
-           <Route path="/domsousa" element={<DomSousa />} />
-           <Route path="/position" element={<Position />} />
-           <Route path="/playground" element={<PlayGround />} />
-        </Routes>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/selector" element={<Selector />} />
+        <Route path="/myprofile" element={<MyProfile />} />
+        <Route path="/chatroom" element={<ChatArea />} />
+        <Route path="/mypage" element={<MyPage />} />
+        <Route path="/dropdownmenu" element={<DropDownMenu />} />
+        <Route path="/domsousa" element={<DomSousa />} />
+        <Route path="/position" element={<Position />} />
+        <Route path="/playground" element={<PlayGround />} />
+      </Routes>
     </Router>
   );
 }

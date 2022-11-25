@@ -10,15 +10,15 @@ import { VscAccount } from 'react-icons/vsc';
 //------------------
 function Header() {
   return (
-        <header>
-            <h1><Link to="/"><img src={mainLogo} alt="DesignTyping"/></Link></h1>
-            <nav>
-            <ul>
-            <li><Link to="/">Home<AiOutlineHome /></Link></li>
-            <li><Link to="/selector">Course<MdOutlineSchool /></Link></li>
-            <li><Link to="/mypage">Account<VscAccount /></Link></li>
-            </ul>
-            </nav>
+    <header>
+      <h1><Link to="/"><img src={mainLogo} alt="DesignTyping" /></Link></h1>
+      <nav>
+        <ul>
+          <li><Link to="/">Home<AiOutlineHome /></Link></li>
+          <li><Link to="/selector">Course<MdOutlineSchool /></Link></li>
+          <li><Link to="/mypage">Account<VscAccount /></Link></li>
+        </ul>
+      </nav>
     </header>
   )
 }

@@ -2,34 +2,37 @@
 /* editorのtitle等 */
 /* --------------------------------------- */
 .myprofiletitle {
-    display: flex;
-    margin-top:0.5rem;
-    justify-content: space-around;
-    color:#555;
-  }
-  .positionresult {
-    position: absolute;
-    top:130rem;
-    left:2%;
-    color:#555;
-  }
-  /* -------------------------------------------- */
-  /* autoButton */
-  /* -------------------------------------------- */
-  .myprofiletitle button {
-      background: #fcfcfc;
-      border:1px solid #111;
-      border-radius: 0.2rem;
-      margin-left:0.5rem;
-    color:#555;
-  }
-  /* --------------------------------------- */
-  /* editor関連 */
-  /* --------------------------------------- */
-  .positioni {
-      position:absolute;
-      margin-top: 126rem;
-      border: 2px solid #111;
-      width: 100%;
-      height:100vh;
-  }
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-around;
+  color: #555;
+}
+
+.positionresult {
+  position: absolute;
+  top: 130rem;
+  left: 2%;
+  color: #555;
+}
+
+/* -------------------------------------------- */
+/* autoButton */
+/* -------------------------------------------- */
+.myprofiletitle button {
+  background: #fcfcfc;
+  border: 1px solid #111;
+  border-radius: 0.2rem;
+  margin-left: 0.5rem;
+  color: #555;
+}
+
+/* --------------------------------------- */
+/* editor関連 */
+/* --------------------------------------- */
+.positioni {
+  position: absolute;
+  margin-top: 126rem;
+  border: 2px solid #111;
+  width: 100%;
+  height: 100vh;
+}

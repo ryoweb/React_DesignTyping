@@ -7,51 +7,51 @@ import './dropdownmenu.css'
 
 const DropDownMenu = () => {
   const [html, setHtml] = useState("");
-  const [css,setCss] = useState("");
-  const [js,setJs] = useState("");
+  const [css, setCss] = useState("");
+  const [js, setJs] = useState("");
 
   return (
-<div>
-  <div className="myprofiletitle">
-    <div className="myprofilehtml">HTML<FaHtml5 /><button onClick={()=>setHtml(templateh)}>auto<MdAutoFixHigh /></button></div>
-    <div className="myprofilecss">CSS<FaCss3Alt /><button onClick={()=>setCss(templatec)}>auto<MdAutoFixHigh /></button></div>
-  </div>
+    <div>
+      <div className="myprofiletitle">
+        <div className="myprofilehtml">HTML<FaHtml5 /><button onClick={() => setHtml(templateh)}>auto<MdAutoFixHigh /></button></div>
+        <div className="myprofilecss">CSS<FaCss3Alt /><button onClick={() => setCss(templatec)}>auto<MdAutoFixHigh /></button></div>
+      </div>
 
-  <CodeEditor
-            id="h1"
-            value={html}
-            language="html"
-            onChange={(e) => setHtml(e.target.value)}
-            padding={16}
-            style={styleh}
-/>
-<CodeEditor
-            id="h2"
-            placeholder={templateh}
-            language="html"
-            padding={16}
-            style={stylehh}
-/>
-{/* CSS */}
-<CodeEditor
-            value={css}
-            language="css"
-            onChange={(e) => setCss(e.target.value)}
-            padding={16}
-            style={stylec}
-/>
-<CodeEditor
-            placeholder={templatec}
-            language="css"
-            padding={16}
-            style={stylecc}
-/>
-  
+      <CodeEditor
+        id="h1"
+        value={html}
+        language="html"
+        onChange={(e) => setHtml(e.target.value)}
+        padding={16}
+        style={styleh}
+      />
+      <CodeEditor
+        id="h2"
+        placeholder={templateh}
+        language="html"
+        padding={16}
+        style={stylehh}
+      />
+      {/* CSS */}
+      <CodeEditor
+        value={css}
+        language="css"
+        onChange={(e) => setCss(e.target.value)}
+        padding={16}
+        style={stylec}
+      />
+      <CodeEditor
+        placeholder={templatec}
+        language="css"
+        padding={16}
+        style={stylecc}
+      />
 
-  <div className="dropresult">Result<FiMonitor /></div>
-  <iframe className="dropi" srcDoc={`${html}<style>${css}</style>`}/>
-  </div>
-);
+
+      <div className="dropresult">Result<FiMonitor /></div>
+      <iframe className="dropi" srcDoc={`${html}<style>${css}</style>`} />
+    </div>
+  );
 };
 
 export default DropDownMenu
@@ -67,10 +67,10 @@ const styleh = {
   height: "128rem",
   border: "1px solid black",
   opacity: "0.7",
-  zIndex:"10",
-  borderRadius:"0.3rem",
+  zIndex: "10",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"4%",
+  left: "4%",
   overflow: "scroll"
 }
 const stylehh = {
@@ -80,10 +80,10 @@ const stylehh = {
   width: "44%",
   height: "128rem",
   border: "1px solid black",
-  zIndex:"1",
-  borderRadius:"0.3rem",
+  zIndex: "1",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"4%",
+  left: "4%",
   overflow: "scroll"
 }
 const stylec = {
@@ -94,10 +94,10 @@ const stylec = {
   height: "128rem",
   border: "1px solid black",
   opacity: "0.5",
-  zIndex:"10",
-  borderRadius:"0.3rem",
+  zIndex: "10",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"52%"
+  left: "52%"
 }
 const stylecc = {
   fontSize: "16px",
@@ -106,10 +106,10 @@ const stylecc = {
   width: "44%",
   height: "128rem",
   border: "1px solid black",
-  zIndex:"1",
-  borderRadius:"0.3rem",
+  zIndex: "1",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"52%"
+  left: "52%"
 }
 
 

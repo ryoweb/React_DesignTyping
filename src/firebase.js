@@ -1,23 +1,3 @@
-//此方がproject[designtyping]のfirebase
-// import { initializeApp } from "firebase/app";
-// import { getAuth } from 'firebase/auth';
-// import { GoogleAuthProvider } from "firebase/auth";
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyC5X7omnoXWYarl0b4-la_xEtAZSkqm9mg",
-//   authDomain: "designtyping.firebaseapp.com",
-//   projectId: "designtyping",
-//   storageBucket: "designtyping.appspot.com",
-//   messagingSenderId: "344559160476",
-//   appId: "1:344559160476:web:ce550b5094695ccf3cf159"
-// };
-
-// const app = initializeApp(firebaseConfig);
-// const auth = getAuth(app);
-// const provider = new GoogleAuthProvider();
-
-// export { auth, provider };
-//chatで作ったfirebaseのproject
 import firebase from 'firebase/compat/app';
 import "firebase/compat/auth";
 import "firebase/compat/firestore"
@@ -35,4 +15,4 @@ const firebaseApp = firebase.initializeApp({
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 
-export {db, auth};
+export { db, auth };

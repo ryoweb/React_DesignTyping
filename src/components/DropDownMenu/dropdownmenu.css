@@ -1,19 +1,20 @@
 /* --------------------------------------- */
 /* editorのtitle等 */
 /* --------------------------------------- */
-  .dropresult {
-    position: absolute;
-    top:135rem;
-    left:2%;
-    color:#555;
-  }
-  /* --------------------------------------- */
-  /* editor関連 */
-  /* --------------------------------------- */
-  .dropi {
-      position:absolute;
-      margin-top: 131rem;
-      border: 2px solid #111;
-      width: 100%;
-      height:100vh;
-  }
+.dropresult {
+  position: absolute;
+  top: 135rem;
+  left: 2%;
+  color: #555;
+}
+
+/* --------------------------------------- */
+/* editor関連 */
+/* --------------------------------------- */
+.dropi {
+  position: absolute;
+  margin-top: 131rem;
+  border: 2px solid #111;
+  width: 100%;
+  height: 100vh;
+}

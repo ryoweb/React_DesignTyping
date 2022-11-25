@@ -7,47 +7,47 @@ import './myprofile.css';
 
 const MyProfile = () => {
   const [html, setHtml] = useState("");
-  const [css,setCss] = useState("");
+  const [css, setCss] = useState("");
 
   return (
-<div>
-  <div className="myprofiletitle">
-    <div className="myprofilehtml">HTML<FaHtml5 /><button onClick={()=>setHtml(templateh)}>auto<MdAutoFixHigh /></button></div>
-    <div className="myprofilecss">CSS<FaCss3Alt /><button onClick={()=>setCss(templatec)}>auto<MdAutoFixHigh /></button></div>
-  </div>
+    <div>
+      <div className="myprofiletitle">
+        <div className="myprofilehtml">HTML<FaHtml5 /><button onClick={() => setHtml(templateh)}>auto<MdAutoFixHigh /></button></div>
+        <div className="myprofilecss">CSS<FaCss3Alt /><button onClick={() => setCss(templatec)}>auto<MdAutoFixHigh /></button></div>
+      </div>
 
-{/* HTML */}
-<CodeEditor
-            value={html}
-            language="html"
-            onChange={(e) => setHtml(e.target.value)}
-            padding={16}
-            style={styleh}
-/>
-<CodeEditor
-            placeholder={templateh}
-            language="html"
-            padding={16}
-            style={stylehh}
-/>
-{/* CSS */}
-<CodeEditor
-            value={css}
-            language="css"
-            onChange={(e) => setCss(e.target.value)}
-            padding={16}
-            style={stylec}
-/>
-<CodeEditor
-            placeholder={templatec}
-            language="css"
-            padding={16}
-            style={stylecc}
-/>
-  <div className="myprofileresult">Result<FiMonitor /></div>
-  <iframe className="myprofilei" srcDoc={`${html}<style>${css}</style>`}/>
-  </div>
-);
+      {/* HTML */}
+      <CodeEditor
+        value={html}
+        language="html"
+        onChange={(e) => setHtml(e.target.value)}
+        padding={16}
+        style={styleh}
+      />
+      <CodeEditor
+        placeholder={templateh}
+        language="html"
+        padding={16}
+        style={stylehh}
+      />
+      {/* CSS */}
+      <CodeEditor
+        value={css}
+        language="css"
+        onChange={(e) => setCss(e.target.value)}
+        padding={16}
+        style={stylec}
+      />
+      <CodeEditor
+        placeholder={templatec}
+        language="css"
+        padding={16}
+        style={stylecc}
+      />
+      <div className="myprofileresult">Result<FiMonitor /></div>
+      <iframe className="myprofilei" srcDoc={`${html}<style>${css}</style>`} />
+    </div>
+  );
 };
 
 export default MyProfile;
@@ -62,10 +62,10 @@ let styleh = {
   height: "144rem",
   border: "1px solid black",
   opacity: "0.5",
-  zIndex:"10",
-  borderRadius:"0.3rem",
+  zIndex: "10",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"4%"
+  left: "4%"
 }
 let stylehh = {
   fontSize: "16px",
@@ -74,10 +74,10 @@ let stylehh = {
   width: "44%",
   height: "144rem",
   border: "1px solid black",
-  zIndex:"1",
-  borderRadius:"0.3rem",
+  zIndex: "1",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"4%"
+  left: "4%"
 }
 let stylec = {
   fontSize: "16px",
@@ -87,10 +87,10 @@ let stylec = {
   height: "144rem",
   border: "1px solid black",
   opacity: "0.5",
-  zIndex:"10",
-  borderRadius:"0.3rem",
+  zIndex: "10",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"52%"
+  left: "52%"
 }
 let stylecc = {
   fontSize: "16px",
@@ -99,10 +99,10 @@ let stylecc = {
   width: "44%",
   height: "144rem",
   border: "1px solid black",
-  zIndex:"1",
-  borderRadius:"0.3rem",
+  zIndex: "1",
+  borderRadius: "0.3rem",
   position: "absolute",
-  left:"52%"
+  left: "52%"
 }
 
 // ----------------------------------------------------//

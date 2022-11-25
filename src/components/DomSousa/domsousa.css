@@ -3,18 +3,18 @@
 /* --------------------------------------- */
 .domsousaresult {
   position: absolute;
-  top:22rem;
-  left:2%;
-  color:#555;
+  top: 22rem;
+  left: 2%;
+  color: #555;
 }
+
 /* --------------------------------------- */
 /* editor関連 */
 /* --------------------------------------- */
 .domsousai {
-    position:absolute;
-    top:24rem;
-    border: 2px solid #111;
-    width: 100%;
-    height:100vh;
+  position: absolute;
+  top: 24rem;
+  border: 2px solid #111;
+  width: 100%;
+  height: 100vh;
 }
-
